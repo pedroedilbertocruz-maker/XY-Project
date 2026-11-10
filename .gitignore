@@ -1,0 +1,36 @@
+# Game data and anything generated from it: never commit
+*.3ds
+*.cci
+*.cia
+*.cxi
+*.app
+romfs/
+in/
+out/
+outmod/
+jogos/
+jogo.txt
+
+# Downloaded toolchain (Python, llvm-mingw, SDL2, controller database)
+ferramentas/
+
+# Personal files (your own images, texture packs, screenshots)
+fundos/
+icones/
+texturas/
+capturas/
+cartuchos/
+
+# Settings and logs
+lancador.ini
+lancador.log
+opcoes.txt
+controles.txt
+*.log
+
+# Builds
+XY Project.exe
+*.o
+__pycache__/
+test/build/
+dist/

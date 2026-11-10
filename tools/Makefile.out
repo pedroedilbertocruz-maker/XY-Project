@@ -1,0 +1,5 @@
+SRC := $(wildcard src/*.c)
+OBJ := $(patsubst src/%.c,obj/%.o,$(SRC))
+all: $(OBJ)
+obj/%.o: src/%.c ../runtime/rt.h
+	@clang -O1 -w -I../runtime -c $< -o $@ 2> obj/$*.err || (echo "ERRO $<"; head -3 obj/$*.err)
